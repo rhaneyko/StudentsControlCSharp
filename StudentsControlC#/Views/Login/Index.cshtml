@@ -1,21 +1,19 @@
 ﻿@{
-    ViewData["Title"] = "Login Page";
+    ViewData["Title"] = "Tela de Login";
 }
 
 <h1 class="text-center">Login</h1>
 
 <form>
     <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <label for="exampleInputEmail1" class="form-label">Email</label>
         <input type="email" class="form-control">
     </div>
     <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <label for="exampleInputPassword1" class="form-label">Senha</label>
         <input type="password" class="form-control">
     </div>
-    <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input">
-        <label class="form-check-label">Login</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Fazer login</button>
+    <a type="submit" class="btn btn-primary">Login</a>
+    <a type="submit" class="btn btn-secondary" asp-area="" asp-controller="Home" asp-action="Index">Voltar</a>
+
 </form>
